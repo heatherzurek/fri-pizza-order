@@ -1,15 +1,35 @@
-h1 {
-  background-color: #365b4d;
+body {
+  background-image: linear-gradient(to right, #31193d, #173f51);
 }
 
 .container {
-  margin: 40px;
-  max-width: 650px;
-  background-color: #76a090;
+  color: #79757f;
+  margin: 10%;
   text-align: center;
+  background-color: #000000;
+  padding: 20px;
+}
+.form-group {
+  color: #79757f;
 }
 
+.row {
+  display: inline-block;
+}
 
-#show-order {
-  display: none;
+#btn {
+  color: black;
+  border: #79757f;
+  background-color: #79757f;
+}
+
+#showOrder {
+  color: #79757f;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#notesToKitchen {
+  color: red;
+  font-size: 20px;
 }
