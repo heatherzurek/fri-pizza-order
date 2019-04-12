@@ -5,7 +5,6 @@ function PizzaShop() {
 }
 
 PizzaShop.prototype.addPizza = function(pizza) {
-  // pizza.id = this.assignId();
   this.pizza.push(pizza);
 }
 
