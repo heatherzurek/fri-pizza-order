@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Epicodus Pizza Society</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Epicodus Pizza Society</h1>
+    <h2>Add your order:</h2>
+    <form id="new-order">
+      <label for="new-topping">Topping</label>
+      <input type="text" id="new-topping">
+      <label for="new-size">Size</label>
+      <input type="text" id="new-size">
+      <button type="submit">Place order</button>
+    </form>
+
+    <h2>Confirm Order Details:</h2>
+    <ul id="order">
+    </ul>
+
+    <div id="show-order">
+      <p>Topping <span class="topping"> </span></p>
+      <p>Size: <span class="size"> </span></p>
+      <div id="buttons">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

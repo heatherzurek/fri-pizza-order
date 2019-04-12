@@ -1,0 +1,15 @@
+h1 {
+  background-color: white;
+}
+
+.container {
+  margin: 40px;
+  max-width: 650px;
+  background-color: #f4d941;
+  text-align: center;
+}
+
+
+#show-order {
+  display: none;
+}
