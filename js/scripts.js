@@ -21,9 +21,9 @@ function Pizza(pizzaTopping, pizzaSize) {
   this.pizzaSize = pizzaSize;
 }
 
-Pizza.prototype.pizzaOrder = function() {
-  return this.pizzaTopping + " " + this.pizzaSize;
-}
+// Pizza.prototype.pizzaOrder = function() {
+//   return this.pizzaTopping + " " + this.pizzaSize;
+// }
 
 //USER INTERFACE LOGIC
 var pizzaShop = new PizzaShop
@@ -34,12 +34,14 @@ $(document).ready(function() {
     event.preventDefault();
     var inputtedPizzaTopping = $("input#newTopping").val();
     var inputtedPizzaSize = $("input#newSize").val();
+    var size = $("input:radio[name=size]:checked").val();
+
     // $("input#newTopping").val("");
     // $("input#newSize").val("");
     var newPizza = new Pizza(inputtedPizzaTopping, inputtedPizzaSize);
     pizzaShop.addPizza(newPizza);
 
-    $("#showOrder").text(newPizza);
-    console.log(newPizza);
+    $("#showOrder").text(newPizza.pizzaTopping + " " + newPizza.pizzaSize);
+    console.log(newPizza.pizza);
   })
 })

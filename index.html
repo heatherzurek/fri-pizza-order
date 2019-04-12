@@ -11,25 +11,41 @@
   <div class="container">
     <h1>Epicodus Pizza Society</h1>
     <h2>Add your order:</h2>
-    <form id="new-order">
-      <label for="new-topping">Topping</label>
-      <input type="text" id="new-topping">
-      <label for="new-size">Size</label>
-      <input type="text" id="new-size">
+    <div class="radio">
+  <label>
+    <input type="radio" name="size" value="small" checked>
+    Small
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="size" value="medium">
+    Medium
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="size" value="large">
+    Large
+  </label>
+</div>
+    <form id="newOrder">
+      <label for="newTopping">Topping</label>
+      <input type="text" id="newTopping">
+      <label for="newSize">Size</label>
+      <input type="text" id="newSize">
       <button type="submit">Place order</button>
     </form>
 
     <h2>Confirm Order Details:</h2>
-    <ul id="order">
-    </ul>
 
-    <div id="show-order">
-      <p>Topping <span class="topping"> </span></p>
+    <div id="showOrder">
+      <!-- <p>Topping <span class="topping"> </span></p>
       <p>Size: <span class="size"> </span></p>
-      <div id="buttons">
+      <div id="buttons"> -->
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
 </body>
 </html>
