@@ -11,29 +11,48 @@
   <div class="container">
     <h1>Epicodus Pizza Society</h1>
     <h2>Add your order:</h2>
-    <div class="radio">
+    <!-- <div class="radio">
   <label>
-    <input type="radio" name="size" value="small" checked>
+    <input type="radio" name="newSize" value="small" checked>
     Small
   </label>
 </div>
 <div class="radio">
   <label>
-    <input type="radio" name="size" value="medium">
+    <input type="radio" name="newSize" value="medium">
     Medium
   </label>
 </div>
 <div class="radio">
   <label>
-    <input type="radio" name="size" value="large">
-    Large
-  </label>
+    <input type="radio" name="newSize" value="large">
+
+  </label> -->
+
+  <div class="form-group">
+  <label for="new-pizza-size">Pick Your Size</label>
+  <select class="newSize" id="newSize">
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+    <option value="Extra Large">Extra Large</option>
+  </select>
 </div>
+
+<div class="form-group">
+<label for="new-pizza">Speciality Pizzas</label>
+<select class="newTopping" id="newTopping">
+  <option value="Mac N' Cheese Pizza">Mac N' Cheese Pizza</option>
+  <option value="Mellow Mushroom">Mellow Mushroom</option>
+  <option value="Epicodus Delight">Epicodus Delight</option>
+</select>
+</div>
+
     <form id="newOrder">
-      <label for="newTopping">Topping</label>
-      <input type="text" id="newTopping">
-      <label for="newSize">Size</label>
-      <input type="text" id="newSize">
+      <label for="pizzaRequests">Special Requests</label>
+      <input type="text" id="pizzaRequests">
+      <!-- <label for="newSize">Size</label>
+      <input type="text" id="newSize"> -->
       <button type="submit">Place order</button>
     </form>
 
