@@ -16,31 +16,24 @@ PizzaShop.prototype.addPizza = function(pizza) {
 // }
 
 // BUSSINESS LOGIC FOR PIZZA
-function Pizza(pizzaTopping, pizzaSize, pizzaRequests) {
+function Pizza(pizzaTopping, pizzaSize, pizzaRequests, pizzaPrice) {
   this.pizzaTopping = pizzaTopping;
   this.pizzaSize = pizzaSize;
   this.pizzaRequests = pizzaRequests;
+  this.pizzaPrice = 10;
   // this.price = pizzaPrice;
 }
 
-// Pizza.prototype.sizeCalculator = function (inputSize) {
-//   this.pizzaSize = inputSize;
-// };
-//
-// Pizza.prototype.findPrice = function () {
-//   if(this.pizzaSize === "small") {
-//     this.price = 10;
-//   } else if (this.size === "medium") {
-//     this.price = 15;
-//   } else {
-//
-//   }
-//   return this.price;
-// }
-
-// Pizza.prototype.pizzaOrder = function() {
-//   return this.pizzaTopping + " " + this.pizzaSize;
-// }
+Pizza.prototype.getPizzaPrice = function () {
+  if(this.pizzaSize === "Small"){
+    this.pizza += 2;
+  } else if(this.pizzaSize === "Medium"){
+    this.ticket += 4;
+  } else if(this.pizzaSize === "Large"){
+      this.ticket += 6;
+  }
+return getPizzaPrice;
+}
 
 //USER INTERFACE LOGIC
 var pizzaShop = new PizzaShop
@@ -52,7 +45,6 @@ $(document).ready(function() {
     var inputtedPizzaTopping = $("select#newTopping").val();
     var selectedPizzaSize = $("select#newSize").val();
     var inputtedPizzaRequests = $("input#pizzaRequests").val();
-    // var  = $("input:radio[name=size]:checked").val();
 
     // $("input#newTopping").val("");
     // $("input#newSize").val("");
