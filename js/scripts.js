@@ -11,25 +11,24 @@ PizzaShop.prototype.addPizza = function(pizza) {
 
 
 // BUSSINESS LOGIC FOR PIZZA
-function Pizza(pizzaTopping, pizzaSize, pizzaRequests, pizzaPrice) {
+function Pizza(pizzaTopping, pizzaSize, pizzaRequests) {
   this.pizzaTopping = pizzaTopping;
   this.pizzaSize = pizzaSize;
   this.pizzaRequests = pizzaRequests;
-  this.pizzaPrice = 0;
 }
 
 Pizza.prototype.priceOfPizza = function() {
+  var pizzaTotal = 0;
   if (this.pizzaSize === "Small") {
-    pizzaPrice += 10;
-    console.log(pizzaPrice);
+    pizzaTotal += 10;
   } else if (this.pizzaSize === "Medium") {
-    pizzaPrice += 13;
+    pizzaTotal += 13;
   } else if (this.pizzaSize === "Large") {
-    pizzaPrice += 15;
+    pizzaTotal += 15;
   } else if (this.pizzaSize === "Extra Large") {
-    pizzaPrice += 20;
+    pizzaTotal += 20;
   }
-  return this.pizzaPrice;
+  return this.pizzaPrice = pizzaTotal;
 }
 
 
@@ -44,7 +43,8 @@ $(document).ready(function() {
     var inputtedPizzaRequests = $("input#pizzaRequests").val();
     // var pizzaPrice = 0;
     // pizza.priceOfPizza();
-    var newPizza = new Pizza(inputtedPizzaTopping, selectedPizzaSize, inputtedPizzaRequests, priceOfPizza);
+    var newPizza = new Pizza(inputtedPizzaTopping, selectedPizzaSize, inputtedPizzaRequests);
+    newPizza.priceOfPizza();
     $("#showOrder").text(newPizza.pizzaSize + " " + newPizza.pizzaTopping + " " + newPizza.pizzaRequests + " " + newPizza.pizzaPrice);
     console.log(newPizza);
   })
