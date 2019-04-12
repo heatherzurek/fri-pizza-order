@@ -10,12 +10,18 @@ _This application is designed to use JavaScript constructors and prototypes to o
 
 ## Setup/Installation Requirements
 
-* _Clone down_
+* _Clone down from GitHub_
 * _Open index.html_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Specs
+
+| Behavior | Input | Output |
+| ------------- |:-------------:| -----:|
+| User chooses pizza size from drop down | Small | Small |
+| User chooses type of pizza from drop down | Mt. Hood Margarita | Small Mt. Hood Margarita |
+| User can enter any special requests or allergies | No Mushrooms | Small Mt. Hood Margarita No Mushrooms |
+| Application returns pizza choices with correct price from their specification on size | Small Mt. Hood Margarita No Mushrooms | Small Mt. Hood Margarita No Mushrooms $12 |
 
 
 ## Known Bugs
@@ -24,14 +30,14 @@ _No Known Bugs_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you run into any issues or have questions, ideas or concerns. Please contact me at Heather.Zurek@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_HTML, CSS, Bootstrap, JavaScript, jQuery, Google.._
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*MIT License*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2019 **_Heather Zurek_**
