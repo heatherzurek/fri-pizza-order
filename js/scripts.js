@@ -1,7 +1,4 @@
 //BUSINESS LOGIC FOR PIZZA SHOP
-function priceOf(priceSelector) {
-var priceOut = "";
-
 //global variable to save the pizzas inside
 function PizzaShop() {
   this.pizza = []
@@ -21,9 +18,9 @@ function Pizza(pizzaTopping, pizzaSize, pizzaRequests, pizzaPrice) {
   this.pizzaPrice = 0;
 }
 
-Pizza.prototype.sizeOfPizza = function() {
+Pizza.prototype.priceOfPizza = function() {
   if (this.pizzaSize === "Small") {
-    priceOut += 10;
+    pizzaPrice += 10;
     console.log(pizzaPrice);
   } else if (this.pizzaSize === "Medium") {
     pizzaPrice += 13;
@@ -32,8 +29,9 @@ Pizza.prototype.sizeOfPizza = function() {
   } else if (this.pizzaSize === "Extra Large") {
     pizzaPrice += 20;
   }
-  return pizzaPrice;
+  return this.pizzaPrice;
 }
+
 
 //USER INTERFACE LOGIC
 var pizzaShop = new PizzaShop
@@ -44,12 +42,10 @@ $(document).ready(function() {
     var inputtedPizzaTopping = $("select#newTopping").val();
     var selectedPizzaSize = $("select#newSize").val();
     var inputtedPizzaRequests = $("input#pizzaRequests").val();
-    var priceSelector = parseInt($("input#priceOf").val());
-    var output = priceOf(priceSelector);
-    var newPizza = new Pizza(inputtedPizzaTopping, selectedPizzaSize, inputtedPizzaRequests);
-
+    // var pizzaPrice = 0;
+    // pizza.priceOfPizza();
+    var newPizza = new Pizza(inputtedPizzaTopping, selectedPizzaSize, inputtedPizzaRequests, priceOfPizza);
     $("#showOrder").text(newPizza.pizzaSize + " " + newPizza.pizzaTopping + " " + newPizza.pizzaRequests + " " + newPizza.pizzaPrice);
     console.log(newPizza);
-    $("#showPrice").text(output);
   })
 })
