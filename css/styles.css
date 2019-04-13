@@ -1,17 +1,21 @@
 body {
-  background-image: linear-gradient(to right, #274147, #472d66);
+  color: #FFFFFF;
 }
 
 h1 {
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
   font-size: 60px;
   margin-top: 30px;
+  text-shadow: 2px 2px #64a325;
 }
 .container {
-  /* text-align: center; */
-  background-color: #a2bec1;
+    background-image: url("https://media1.tenor.com/images/81cde5efae2b59f0dc1c7f7621185616/tenor.gif?itemid=12438228");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #000000;
   padding: 20px;
+
 }
 
 
@@ -22,7 +26,7 @@ h1 {
 } */
 
 #showOrder {
-  background-color: #43757c;
+  background-color: #64a325;
   font-size: 30px;
   font-weight: bold;
 }
